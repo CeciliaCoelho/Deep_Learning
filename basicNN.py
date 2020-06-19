@@ -1,0 +1,14 @@
+import numpy as np
+
+weights = [0.1 , 0.2 , 0]
+
+def neural_network(input , weight):
+    prediction = input.dot(weights)
+    return prediction
+
+toes = np.array([8.5 , 9.5 , 10 , 9])
+wlrec = np.array([0.65 , 0.8 , 0.8 , 0.9])
+nfans = np.array([1.2 , 1.3 , 0.5 , 1.0])
+input = np.array([toes[0] , wlrec[0] , nfans[0]])
+
+print(neural_network(input , weights))
